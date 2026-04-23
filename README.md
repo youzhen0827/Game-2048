@@ -9,8 +9,7 @@
 
 ## 遊戲畫面
 
-> *
-> **(screenshot.jpg)**
+![遊戲截圖](screenshot.jpg)
 
 ---
 
