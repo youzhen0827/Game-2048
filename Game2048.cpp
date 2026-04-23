@@ -1,4 +1,4 @@
-﻿#include "Game2048.h"
+#include "Game2048.h"
 #include <iostream>
 #include <iomanip>
 #include <ctime>
@@ -53,7 +53,7 @@ void Game2048::addBlock() {
         li = rand() % 4;
         ri = rand() % 4;
         if (board[li][ri] == 0) {
-            board[li][ri] =pow(2, li % 2 + 1);
+            board[li][ri] = pow(2, li % 2 + 1);
             break;
         }
     }
@@ -61,24 +61,20 @@ void Game2048::addBlock() {
 
 // 遊戲版
 void Game2048::display() const {
-    cout << "\n\t\t                    Game: 2048";
-    cout << "\n\n";
-    cout << "\t\t\t\t  ┌───┬───┬───┬───┐\n";
+    cout << "\n\t\t Game: 2048\n\n";
+    cout << "\t\t +-----+-----+-----+-----+\n";
     for (int i = 0; i < 4; ++i) {
-        cout << "\t\t\t\t  │";
+        cout << "\t\t |";
         for (int j = 0; j < 4; ++j) {
             if (board[i][j] == 0)
-                cout << "   │";
+                cout << "     |";
             else
-                cout << setw(3) << board[i][j] << "│";
+                cout << setw(5) << board[i][j] << "|";
         }
         cout << "\n";
-        if (i < 3)
-            cout << "\t\t\t\t  ├───┼───┼───┼───┤\n";
+        cout << "\t\t +-----+-----+-----+-----+\n";
     }
-    cout << "\t\t\t\t  └───┴───┴───┴───┘\n";
-
-    cout << "\n\n\t\t\t\tW:↑   A:←   S:↓   D:→\n";
+    cout << "\n\t\t W:up   A:left   S:down   D:right\n";
 }
 
 // 檢查是否結束
