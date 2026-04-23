@@ -6,6 +6,7 @@
 #include <cmath>
 #include <cstring>
 #include <string>
+#include <windows.h>
 using namespace std;
 
 // 初始化遊戲
@@ -61,20 +62,24 @@ void Game2048::addBlock() {
 
 // 遊戲版
 void Game2048::display() const {
-    cout << "\n\t\t Game: 2048\n\n";
-    cout << "\t\t +-----+-----+-----+-----+\n";
+    SetConsoleOutputCP(65001);
+    cout << "\n\t\t                    Game: 2048";
+    cout << "\n\n";
+    cout << "\t\t\t\t  ┌───┬───┬───┬───┐\n";
     for (int i = 0; i < 4; ++i) {
-        cout << "\t\t |";
+        cout << "\t\t\t\t  │";
         for (int j = 0; j < 4; ++j) {
             if (board[i][j] == 0)
-                cout << "     |";
+                cout << "   │";
             else
-                cout << setw(5) << board[i][j] << "|";
+                cout << setw(3) << board[i][j] << "│";
         }
         cout << "\n";
-        cout << "\t\t +-----+-----+-----+-----+\n";
+        if (i < 3)
+            cout << "\t\t\t\t  ├───┼───┼───┼───┤\n";
     }
-    cout << "\n\t\t W:up   A:left   S:down   D:right\n";
+    cout << "\t\t\t\t  └───┴───┴───┴───┘\n";
+    cout << "\n\n\t\t\t\tW:up   A:left   S:down   D:right\n";
 }
 
 // 檢查是否結束
