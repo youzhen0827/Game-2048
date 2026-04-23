@@ -3,7 +3,7 @@
 以 C++ 實作的終端機 2048 益智遊戲，採用物件導向設計，將遊戲邏輯與畫面渲染分離為獨立的類別。
 
 🔗 **[線上試玩 Demo](https://a23e0eb4-8554-4c6e-8739-c854489a2b8f-00-2von56k16dv7c.pike.replit.dev/)**  
-💾 **[下載 Windows 執行檔](sha256:e37cf63737fa9056f23cfa044ac8e45d6c4a2f204f59a80d1a8f2d1caac60e19)**
+💾 **[下載 Windows 執行檔]([sha256:e37cf63737fa9056f23cfa044ac8e45d6c4a2f204f59a80d1a8f2d1caac60e19](https://github.com/youzhen0827/Game-2048/releases/download/v1.0/2048.exe))**
 
 ---
 
