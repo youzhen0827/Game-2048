@@ -9,7 +9,7 @@
 
 ## 遊戲畫面
 
-> *(screenshot.jpg)*
+> *#(screenshot.jpg)**
 
 ---
 
