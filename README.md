@@ -40,6 +40,10 @@ main.cpp
 ---
 
 ## 如何執行
+🔗 **[線上試玩 Demo](https://a23e0eb4-8554-4c6e-8739-c854489a2b8f-00-2von56k16dv7c.pike.replit.dev/)**
+
+### 直接點連結試玩
+
 
 ### 環境需求
 
