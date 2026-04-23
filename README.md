@@ -4,10 +4,8 @@
 
 ---
 
-## 遊戲畫面
+## 遊戲
 
-> *(建議：錄一段終端機遊玩畫面的 GIF 或截圖放在這裡)*  
-> 可以用 [Terminalizer](https://github.com/faressoft/terminalizer) 或 [asciinema](https://asciinema.org/) 錄製終端機畫面
 
 ---
 
